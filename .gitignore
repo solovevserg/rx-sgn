@@ -6,6 +6,7 @@
 *.log
 *.tmp
 *.tmp.*
+*.cache
 log.txt
 *.sublime-project
 *.sublime-workspace
@@ -20,6 +21,7 @@ npm-debug.log*
 .versions/
 coverage/
 www/
+dist/
 node_modules/
 tmp/
 temp/
