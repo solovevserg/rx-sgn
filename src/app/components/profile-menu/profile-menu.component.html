@@ -1,0 +1,14 @@
+<ng-container *ngIf="auth.user$ | async as user; else loading">
+  <ion-item>
+    <ion-label>{{user.name}}</ion-label>
+  </ion-item>
+  <img [src]="user.photoUrl">
+  <ion-label>{{user.birthplace}}</ion-label>
+  <ion-button (click)="signOut()">
+    Sign Out
+  </ion-button>
+</ng-container>
+
+<ng-template #loading>
+  loading...
+</ng-template>
